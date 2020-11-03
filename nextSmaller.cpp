@@ -1,5 +1,4 @@
- #include<iostream>
-#include<conio.h>
+#include<iostream>
 using namespace std;
 	
 int findSmallest(int arr[], int element, int start, int end){
@@ -48,11 +47,13 @@ int findGreatest(int arr[], int start, int end){
 
 int main(){
 
-	int n=10, arr[10] = {5,1,9,2,5,1,7,8,1,10},Outarr[n];
+	int n, arr[n], Outarr[n];
 	int smallestIndex=0, j, greatest=0;
 	
-	for(int i=0; i<n; i++,j++)
-		Outarr[i] = 0;
+	cin>>n;
+	
+	for(int i=0; i<n; i++)
+		cin>>arr[i];
 
 	for (int i=0; i<n; i++){
 
